@@ -15,6 +15,12 @@ window.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    function closeStyle() {
+        icons.forEach(item => {
+            item.style.removeProperty("z-index");
+        });
+    }
+
     function showOther(i = 5) {
         other[i].style.display = "block";
         icons[i].style.cssText = "z-index: 10";
@@ -22,17 +28,15 @@ window.addEventListener("DOMContentLoaded", () => {
 
     hideOther();
     showOther();
-    console.log(iconsParent);
+   
 
     iconsParent.addEventListener("click", (event) => {
         const target = event.target;
-        console.log(target);
-        console.log(sss[1]);
-
 
         if (target) {
             sss.forEach((item, i) => {
                 if (target === item) {
+                    closeStyle()
                     hideOther();
                     showOther(i);
                 }
