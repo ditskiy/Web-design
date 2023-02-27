@@ -1,0 +1,55 @@
+.contact {
+  padding-top: 110px;
+  &__form {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 720px;
+    label {
+      margin-bottom: 10px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 23px;
+      text-transform: uppercase;
+      color: #3d3d3f;
+      opacity: 0.9;
+    }
+    input {
+      width: 343px;
+      height: 52px;
+      background: #ffffff;
+      box-shadow: 0px 4px 120px rgba(0, 0, 0, 0.03);
+      border-radius: 5px;
+      border: none;
+      padding-left: 12px;
+    }
+    textarea {
+      width: 719px;
+      height: 191px;
+      background: #ffffff;
+      box-shadow: 0px 4px 120px rgba(0, 0, 0, 0.03);
+      border-radius: 5px;
+      border: none;
+      resize: none;
+      padding: 18px;
+    }
+  }
+  &__name {
+    display: flex;
+    flex-direction: column;
+    width: 343.17px;
+    height: 87.38px;
+  }
+  &__email {
+    display: flex;
+    flex-direction: column;
+    width: 343.17px;
+    height: 87.38px;
+  }
+  &__textarea {
+    margin: 35px 0 89px 0;
+  }
+}

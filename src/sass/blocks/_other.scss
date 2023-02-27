@@ -1,30 +1,29 @@
 .other {
   padding-top: 120px;
   &__items {
+    background-image: url(../../img/other-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
     position: relative;
-    display: flex;
     width: 743px;
     height: 547px;
   }
   &__item {
     width: 315px;
     height: 320px;
-  }
-  &__icons {
-    margin: 0 auto;
-    width: 140px;
-    height: 140px;
-    border-radius: 100%;
-    &:hover {
-      border: 4px solid $color1;
-    }
     img {
-      width: 100%;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
       border-radius: 100%;
+      &:hover {
+        border: 4px solid $color1;
+      }
     }
   }
   &__block {
-    display: none;
+    display: block;
     margin-top: 20px;
     padding: 13px;
     width: 319px;
@@ -34,6 +33,10 @@
     border-radius: 20px;
     text-align: center;
   }
+  // &__activ {
+  //   display: block;
+  //   z-index: 10;
+  // }
   &__text {
     font-weight: 400;
     font-size: 16px;
@@ -58,26 +61,55 @@
 }
 .item_0 {
   position: absolute;
-  left: 50%;
+  left: 57%;
   transform: translateX(-50%);
+  img {
+    width: 140px;
+    height: 140px;
+  }
 }
 .item_1 {
   position: absolute;
-  left: 80%;
+  left: 0%;
+  top: 17%;
+  img {
+    width: 128px;
+    height: 128px;
+  }
 }
 .item_2 {
   position: absolute;
-  left: 20%;
+  left: 72%;
+  top: 19%;
+  img {
+    width: 154px;
+    height: 154px;
+  }
 }
 .item_3 {
   position: absolute;
-  left: 60%;
+  left: 34%;
+  top: 37%;
+  img {
+    width: 180px;
+    height: 180px;
+  }
 }
 .item_4 {
   position: absolute;
-  left: 10%;
+  left: 5%;
+  top: 66%;
+  img {
+    width: 152px;
+    height: 152px;
+  }
 }
 .item_5 {
   position: absolute;
-  left: 95%;
+  left: 61%;
+  top: 64%;
+  img {
+    width: 146px;
+    height: 146px;
+  }
 }

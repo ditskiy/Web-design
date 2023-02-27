@@ -20,4 +20,9 @@
     display: block;
     margin: 0 auto;
   }
+  &__right {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+  }
 }
